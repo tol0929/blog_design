@@ -1,0 +1,175 @@
+<style type="text/css">
+
+/************************ ブログタイトル*************************/
+.blog-title {
+  font-size: 60px;
+  font-family: "ヒラギノ明朝 ProN W3";
+  text-shadow: 0.1em 0.1em 0.1em silver;
+}
+
+/************************ ブログ説明 *************************/
+#blog-description {
+  font-size: 25px;
+}
+
+/************************ 目次 *************************/
+.entry-content .table-of-contents {
+ position:relative;
+ border: 3px solid rgb(237, 169, 17); /* 枠の色はここを変更してください */
+ background-color: #f6f6db; /* 背景カラーです */
+ border-radius: 0px 0px 5px 5px;
+ margin-top: 3em; /* 各々の環境で数字を調節してください */
+ margin-left: 0;
+}
+.table-of-contents:after { /* 目次部分 */
+ position: absolute;
+ font-family: FontAwesome;
+ content: '目次'; /* 表示名を変えたければここを変更 */
+ background: rgb(237, 169, 17);;
+ color: #fff;
+ right: 0%;
+ left: 0%;
+ bottom: 100%;
+ border-radius: 5px 5px 0 0;
+ padding: 2px 0 2px 0;
+ margin: 0 -3px 0 -3px;/* -で指定しているところはborderと同じ数値にする */
+ text-align:center;
+ font-size: 1.2em;
+ letter-spacing: 2em
+ }
+.table-of-contents li {
+ font-size:0.9em;
+ font-weight: bold;
+ color:#333;
+}
+.table-of-contents a{
+ color:#545454;
+ padding:8px 0;/* 列の間隔 */
+ display: block;
+ text-decoration: none;
+ transition-duration: 0.3s /* カーソルが戻る時間 */
+}
+.table-of-contents li a {
+  font-size: 15px;
+}
+.table-of-contents li {
+  margin-left: 3em; /* 目次の中の見出し（大） */
+}
+.table-of-contents li ul li {
+  margin-left: 0; /* 目次の中の見出し（中） */
+}
+
+/************************ 見出し（大） *************************/
+h3 {
+     position: relative;
+     color: white;
+     padding:0.5em 0.5em 0.5em 1.4em;
+     background-color: rgb(230, 113, 55);
+     border-radius: 5px;
+}
+
+/************************ 見出し（中） *************************/
+h4 {
+     border-bottom: 2px solid gray;
+     font-weight: bold;
+}
+
+h3::after {
+     position: absolute;
+     top: 50%;
+     left:0.7em;
+     transform:translateY(-50%);
+     content: '';
+     width: 5px;
+     height:25px;
+     background-color:white;
+}
+
+/************************ シェアボタン *************************/
+.share-area {
+  margin: 20px 0;
+}
+.share-button a {
+  display: inline-block;
+  position: relative;
+  width: 52px;
+  height: 52px;
+  padding: 4px 0;
+  line-height: 18px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+  vertical-align: bottom;
+  transition: all 0.4s;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow: hidden;
+}
+.share-button a::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 60px solid transparent;
+  border-top: 60px solid rgba(255, 255, 255, 0.2);
+  content: "";
+  z-index: 2;
+  transition: all 0.1s;
+}
+.share-button a:hover {
+  opacity: 0.6;
+  transition: all 0.4s;
+}
+.share-button a:hover::before {
+  top: -100%;
+  left: 100%;
+  border-top-color: rgba(255, 255, 255, 1);
+  transition: all 0.2s;
+}
+.share-area i,
+.share-area .lg {
+  font-size: 24px;
+}
+.share-button .hatena-bookmark-button .lg {
+  font-size: 32px;
+}
+.share-button .hatena-bookmark-button {
+  padding-top: 1px;
+  padding-bottom: 6px;
+}
+.share-button .twitter-button {
+  padding-top: 5px;
+}
+.share-button .facebook-button .lg  {
+  font-size: 27px;
+  margin-top: -1px;
+}
+.share-button .twitter-button .lg {
+  font-size: 27px;
+}
+.share-area .small-text {
+  font-size: 11px;
+}
+.share-area .fa-spin {
+  font-size: 8px;
+  color: #fff;
+}
+.share-button .hatena-bookmark-button {
+  background: #00A4DE;
+}
+.share-button .facebook-button {
+  background: #405BA7;
+}
+.share-button .twitter-button {
+  background: #55ACEE;
+}
+.share-button .googleplus-button {
+  background: #C53727;
+}
+.share-button .pocket-button {
+  background: #EE4256;
+}
+
+
+</style>
