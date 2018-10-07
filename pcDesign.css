@@ -1,136 +1,6 @@
-/* <system section="theme" selected="alpha2"> */
-/* @import "/css/theme/alpha2/alpha2.css"; */
+/* <system section="theme" selected="6653586347155924442"> */
+@import url("https://blog.hatena.ne.jp/-/theme/6653586347155924442.css");
 /* </system> */
-
-/* <system section="background" selected="polygon-01"> */
-/* body{ background-image: url('/images/theme/backgrounds/2014/polygon-01.jpg'); background-repeat: no-repeat; background-attachment: fixed; background-position: center top; background-size: cover; } */
-/* </system> */
-
-/**************************読者登録ボタン**************************/
-.read-button {
-  display: block;
-  width: 220px;
-  height: 40px;
-  line-height: 40px;
-  text-align: center;
-  text-decoration: none;
-  font-weight:bold;
-  position: relative;
-  color: #000000;
-  border: 2px solid #000000;
-}
-
-.read-button:hover {
-  border-style:dashed;
-}
-
-/************************** ブログタイトル **************************/
-#blog-title-inner {
-  border-bottom: ridge;
-}
-
-#title a {
-  font-size: 60px;
-  text-shadow: 0.1em 0.1em 0.1em silver;
-}
-#blog-description {
-  font-size: 25px;
-  font-style: italic;
-  color: silver;
-  padding-bottom: 50px;
-}
-/************************ 記事タイトル *************************/
-.entry-title a {
-  color: black;
-  font-weight: bold;
-  font-size: 30px;
-  text-shadow: 0.1em 0.1em 0.1em silver;
-}
-/************************ 目次 *************************/
-.entry-content .table-of-contents {
- position:relative;
- border: 3px solid rgb(237, 169, 17); /* 枠の色はここを変更してください */
- background-color: #f6f6db; /* 背景カラーです */
- border-radius: 0px 0px 5px 5px; */
- margin-top: 3em; /* 各々の環境で数字を調節してください */
- margin-left: 0;
-}
-.table-of-contents:after { /* 目次部分 */
- position: absolute;
- font-family: FontAwesome;
- content: '目次'; /* 表示名を変えたければここを変更 */
- background: rgb(237, 169, 17);;
- color: #fff;
- right: 0%;
- left: 0%;
- bottom: 100%;
- border-radius: 5px 5px 0 0;
- padding: 2px 0 2px 0;
- margin: 0 -3px 0 -3px;/* -で指定しているところはborderと同じ数値にする */
- text-align:center;
- font-size: 1.2em;
- letter-spacing: 2em
- }
-.table-of-contents li {
- font-size:0.9em;
- font-weight: bold;
- color:#333;
-}
-.table-of-contents a{
- color:#545454;
- padding:8px 0;/* 列の間隔 */
- display: block;
- text-decoration: none;
- transition-duration: 0.3s /* カーソルが戻る時間 */
-}
-.table-of-contents li a {
-  font-size: 15px;
-}
-.table-of-contents li a:hover {
- padding-left: 7px; /* カーソル重ねた時に移動する距離 */
- transition-duration: 0.3s /* カーソルが移動する時間 */
-}
-.table-of-contents li {
-  margin-left: 3em; /* 目次の中の見出し（大） */
-}
-.table-of-contents li ul li {
-  margin-left: 0; /* 目次の中の見出し（中） */
-}
-
-/************************ 見出し *************************/
-/* 見出し（大） */
-h3 {
-     position: relative;
-     color: white;
-     padding:0.5em 0.5em 0.5em 1.4em;
-     background-color: rgb(230, 113, 55);
-     border-radius: 5px;
-}
-/* 見出し（中） */
-h4 {
-     border-bottom: 2px solid gray;
-     font-weight: bold;
-}
-
-h3::after {
-     position: absolute;
-     top: 50%;
-     left:0.7em;
-     transform:translateY(-50%);
-     content: '';
-     width: 5px;
-     height:25px;
-     background-color:white;
-}
-
-.entry-title {
-   fo
-}
-
-/************************ div#container *************************/
-/* div #container {
-  width: 1500px;
-} */
 
 /************************ シェアボタン *************************/
 .share-area {
@@ -216,4 +86,12 @@ h3::after {
 }
 .share-button .pocket-button {
   background: #EE4256;
+}
+/************************ コードブロック *************************/
+.entry-content .code {
+  background-color: #364549;
+  color: #e3e3e3;
+}
+.entry-content .code .synComment {
+  color: #4f80e5;
 }
