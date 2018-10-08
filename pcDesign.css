@@ -2,6 +2,24 @@
 @import url("https://blog.hatena.ne.jp/-/theme/6653586347155924442.css");
 /* </system> */
 
+/************************ タイトルヘッダー *************************/
+#blog-title {
+  overflow: visible !important;
+  background: -webkit-linear-gradient(45deg, #fceb05 10%, #eaecc0 90%);
+  background: -moz-linear-gradient(45deg, #fceb05 10%, #eaecc0 90%);
+  background: -ms-linear-gradient(45deg, #fceb05 10%, #eaecc0 90%);
+  background: -o-linear-gradient(45deg, #fceb05 10%, #eaecc0 90%);
+  background: linear-gradient(45deg, #fceb05 10%, #eaecc0 90%);
+}
+#blog-title h1 a{
+  color: #5e1f08;
+  text-shadow: 0.1em 0.1em 0.1em silver;
+}
+#blog-title h2 {
+  color: gray;
+  text-align: right;
+  font-size: 15px;
+}
 /************************ シェアボタン *************************/
 .share-area {
   margin: 20px 0;
@@ -94,4 +112,11 @@
 }
 .entry-content .code .synComment {
   color: #4f80e5;
+}
+/************************ サイドバー *************************/
+/* 記事一覧のカテゴリー */
+#box2 .urllist-category-link {
+  color: #000000;
+  background-color: #f0f0f0;
+  padding: 2px 4px;
 }
